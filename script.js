@@ -6,13 +6,13 @@ function addTask(){
         alert("You must write something!");
     }
     else{
-        let li = document.createElement("li");
-        li.innerHTML = inputbox.value;
-        listcontainer.appendChild(li);
+        let listItem = document.createElement("li");
+        listItem.innerHTML = inputbox.value;
+        listcontainer.appendChild(listItem);
         let span = document.createElement("span");
 
         span.innerHTML = "\u00d7";
-        li.appendChild(span); 
+        listItem.appendChild(span); 
     }
     inputbox.value = "";
     savedata();
@@ -38,5 +38,6 @@ function savedata(){
 function showtask(){
     listcontainer.innerHTML = localStorage.getItem("data");
 }
+
 
 showtask();
