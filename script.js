@@ -1,7 +1,7 @@
 const inputbox = document.getElementById("input-box");
 const listcontainer = document.getElementById("list-container");
 
-function addTask(){
+function addTaskToTheList(){
     if(inputbox.value === ''){
         alert("You must write something!");
     }
@@ -41,3 +41,4 @@ function showtask(){
 
 
 showtask();
+
